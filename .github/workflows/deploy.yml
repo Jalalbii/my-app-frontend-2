@@ -25,7 +25,8 @@ jobs:
         run: npm install
 
       - name: 🛠️ Build the app
-        run: npm run build
+        run: |
+          VITE_API_URL=https://your-backend.onrender.com npm run build
 
       - name: 🚀 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
