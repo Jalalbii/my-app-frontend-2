@@ -26,7 +26,7 @@ jobs:
 
       - name: 🛠️ Build the app
         run: |
-          VITE_API_URL=https://your-backend.onrender.com npm run build
+          VITE_API_URL=https://my-app-backend-cicd.onrender.com npm run build
 
       - name: 🚀 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
